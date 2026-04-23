@@ -1,0 +1,20 @@
+pluginManagement {
+  repositories {
+    google()
+    mavenCentral()
+    gradlePluginPortal()
+  }
+}
+
+dependencyResolutionManagement {
+  repositoriesMode.set(RepositoriesMode.PREFER_PROJECT)
+  repositories {
+    google()
+    mavenCentral()
+  }
+}
+
+rootProject.name = "react-native-android-time-change"
+
+include ":react-native-android-time-change"
+project(":react-native-android-time-change").projectDir = file("android")

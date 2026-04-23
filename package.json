@@ -1,0 +1,54 @@
+{
+  "name": "@niqp/react-native-android-time-change",
+  "version": "0.1.0",
+  "description": "React Native Android bridge for time and timezone change broadcasts.",
+  "main": "./dist/commonjs/index.js",
+  "module": "./dist/module/index.js",
+  "types": "./dist/typescript/index.d.ts",
+  "react-native": "./src/index.ts",
+  "source": "./src/index.ts",
+  "files": [
+    "android/src",
+    "android/build.gradle",
+    "dist",
+    "src",
+    "react-native.config.js",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "clean": "rimraf dist android/build build",
+    "build": "npm run build:commonjs && npm run build:module && npm run build:types",
+    "build:commonjs": "tsc -p tsconfig.commonjs.json",
+    "build:module": "tsc -p tsconfig.module.json",
+    "build:types": "tsc -p tsconfig.types.json",
+    "typecheck": "tsc --noEmit",
+    "test": "jest",
+    "test:android": "node scripts/run-android-tests.js"
+  },
+  "keywords": [
+    "react-native",
+    "android",
+    "time",
+    "timezone",
+    "headless-js"
+  ],
+  "license": "MIT",
+  "peerDependencies": {
+    "react": "*",
+    "react-native": "*"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.14",
+    "@types/react": "^19.1.10",
+    "jest": "^29.7.0",
+    "react": "19.1.0",
+    "react-native": "0.81.5",
+    "rimraf": "^6.0.1",
+    "ts-jest": "^29.4.6",
+    "typescript": "^5.9.3"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
