@@ -1,6 +1,6 @@
 {
   "name": "@niqp/react-native-android-time-change",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "React Native Android bridge for time and timezone change broadcasts.",
   "repository": {
     "type": "git",
