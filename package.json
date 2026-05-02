@@ -2,18 +2,29 @@
   "name": "@niqp/react-native-android-time-change",
   "version": "0.1.0",
   "description": "React Native Android bridge for time and timezone change broadcasts.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Niqp/react-native-android-time-change.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Niqp/react-native-android-time-change/issues"
+  },
+  "homepage": "https://github.com/Niqp/react-native-android-time-change#readme",
+  "packageManager": "npm@11.6.2",
   "main": "./dist/commonjs/index.js",
   "module": "./dist/module/index.js",
   "types": "./dist/typescript/index.d.ts",
   "react-native": "./src/index.ts",
   "source": "./src/index.ts",
   "files": [
-    "android/src",
+    "android/src/main",
     "android/build.gradle",
     "dist",
-    "src",
+    "src/index.ts",
     "react-native.config.js",
     "README.md",
+    "CHANGELOG.md",
+    "SECURITY.md",
     "LICENSE"
   ],
   "scripts": {
